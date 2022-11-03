@@ -1,1 +1,1 @@
-# SMD(숙명여대 무용과) homepage renual
+# SMD(숙명여대 무용과) homepage renewal
