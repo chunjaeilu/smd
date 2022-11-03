@@ -1,4 +1,4 @@
-# SMD(숙명여대 무용과) | 22.10.31 ~
+# SMD(숙명여대 무용과) | 22.10.31(월) ~
 
 URL : https://chunjaeilu.github.io/smd/
 
