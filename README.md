@@ -1,4 +1,4 @@
-# SMD(숙명여대 무용과) Homepage Renewal
+# SMD(숙명여대 무용과)
 
 URL : https://chunjaeilu.github.io/smd/
 
