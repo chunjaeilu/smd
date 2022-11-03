@@ -1,0 +1,17 @@
+/* style.css */
+
+/* 외부 style문서 불러오기 */
+@import "./reset.css";
+
+/* 웹폰트 (Noto Sans KR / Crimson Text) */
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap");
+
+/* css style */
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+h1 {
+  font-family: "Crimson Text", serif;
+}
