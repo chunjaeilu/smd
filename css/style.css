@@ -8,10 +8,164 @@
 
 /* css style */
 
+:root {
+  --main-color: #0c2d83;
+  --bg-color-light: #f5f5f5;
+  --text-light: #666;
+  --white: #fff;
+}
+
 body {
   font-family: "Noto Sans KR", sans-serif;
+  font-size: 15px;
+  background-color: var(--white);
 }
 
 h1 {
   font-family: "Crimson Text", serif;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+a {
+  color: #000;
+}
+
+.container {
+  width: 1440px;
+  height: 100%;
+  /* outline: 0.5px solid red; */
+  margin: 0 auto;
+  position: relative;
+}
+
+/* ##### 헤더 ##### */
+
+#main-header {
+  height: 80px;
+  /* background: #ccc; */
+}
+
+#main-header h1 {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+#gnb {
+  position: absolute;
+  right: 170px;
+  top: 28px;
+  z-index: 100;
+}
+
+/* 1단계 메뉴 */
+#gnb .depth1 {
+  display: flex;
+}
+#gnb .depth1 > li {
+  width: 100px;
+  display: inline-block;
+  margin-left: 20px;
+  /* outline: 1px solid red; */
+  text-align: center;
+}
+#gnb .depth1 > li > a {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* 2단계 메뉴 */
+
+#gnb .depth2 {
+  background: var(--white);
+  border: 0.1px solid #ccc;
+  margin-top: 27px;
+  display: none;
+  padding: 10px;
+}
+
+#gnb .depth2 > li {
+  margin-bottom: 10px;
+}
+#gnb .depth2 > li:last-child {
+  margin-bottom: 0;
+}
+
+#gnb .depth2 a {
+  color: var(--text-light);
+}
+/* 호버효과 */
+#gnb .depth1 > li:hover > a {
+  color: var(--main-color);
+  font-weight: 700;
+}
+
+#gnb .depth1 > li:hover .depth2 {
+  display: block;
+}
+
+#gnb .depth2 > li:hover > a {
+  text-decoration: underline;
+}
+
+#main-header .btn-toggle {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+}
+
+/* ##### 메인배너 ##### */
+
+#main-banner {
+  height: 480px;
+  background: #000;
+}
+
+#main-banner .container {
+  background-image: url(../images/main-banner-1.jpg);
+  background-image: url(../images/main-banner-2.jpg);
+  display: flex;
+  align-items: center;
+}
+
+#main-banner h1 {
+  color: var(--white);
+  font-size: 60px;
+  font-weight: 400;
+  padding-left: 100px;
+}
+
+/* ##### Introduction ##### */
+
+#intro .container {
+  padding: 50px 20px;
+  background: #ccc;
+}
+
+#intro .intro-list {
+  display: flex;
+  /* gap: 20px; */
+  padding-top: 28px;
+  justify-content: space-between;
+}
+
+#intro .intro-list li {
+  /* outline: 1px solid red; */
+  width: calc((100% - 60px) / 4);
+  text-align: center;
+}
+
+#intro .intro-list li img {
+  width: 100%;
+  display: flex;
 }
