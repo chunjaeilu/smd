@@ -1,6 +1,10 @@
 /* style.css */
 
 /* 외부 style문서 불러오기 */
+/*
+  @import url(문서경로);
+  @import "문서경로";
+*/
 @import "./reset.css";
 
 /* 웹폰트 (Noto Sans KR / Crimson Text) */
@@ -25,6 +29,7 @@ h1 {
   font-family: "Crimson Text", serif;
   font-size: 26px;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -44,16 +49,14 @@ a {
 .container {
   width: 1440px;
   height: 100%;
-  /* outline: 0.5px solid red; */
   margin: 0 auto;
   position: relative;
 }
 
-/* ##### 헤더 ##### */
+/* ##### header ##### */
 
 #main-header {
   height: 80px;
-  /* background: #ccc; */
 }
 
 #main-header h1 {
@@ -73,10 +76,9 @@ a {
   display: flex;
 }
 #gnb .depth1 > li {
-  width: 100px;
+  width: 7em;
   display: inline-block;
   margin-left: 20px;
-  /* outline: 1px solid red; */
   text-align: center;
 }
 #gnb .depth1 > li > a {
@@ -124,7 +126,7 @@ a {
   top: 25px;
 }
 
-/* ##### 메인배너 ##### */
+/* ##### Main-banner ##### */
 
 #main-banner {
   height: 480px;
@@ -133,9 +135,9 @@ a {
 
 #main-banner .container {
   background-image: url(../images/main-banner-1.jpg);
-  background-image: url(../images/main-banner-2.jpg);
   display: flex;
   align-items: center;
+  transition: 2s;
 }
 
 #main-banner h1 {
@@ -149,23 +151,129 @@ a {
 
 #intro .container {
   padding: 50px 20px;
-  background: #ccc;
 }
 
 #intro .intro-list {
   display: flex;
-  /* gap: 20px; */
-  padding-top: 28px;
-  justify-content: space-between;
+  gap: 20px;
+  /* justify-content: space-between; */
+  text-align: center;
 }
 
-#intro .intro-list li {
-  /* outline: 1px solid red; */
+/* #intro .intro-list li {
+  outline: 1px solid red;
   width: calc((100% - 60px) / 4);
-  text-align: center;
+} */
+
+#intro .intro-list h2 {
+  margin-bottom: 10px;
 }
 
 #intro .intro-list li img {
   width: 100%;
   display: flex;
+  margin-bottom: 15px;
+}
+
+/* ##### Notice ##### */
+
+#notice .container {
+  padding: 50px 20px;
+  background: var(--bg-color-light);
+}
+
+#notice .icons-list {
+  display: flex;
+}
+
+#notice .icons-list li {
+  height: 280px;
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 0.5px dotted rgba(0, 0, 0, 0.1);
+}
+
+#notice .icons-list li:first-child {
+  border-left: none;
+}
+
+#notice .icon-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#notice .icon-group img {
+  width: 80px;
+}
+
+#notice .icon-group h3 {
+  margin: 10px 0;
+}
+
+#notice .btn-more {
+  color: var(--text-light);
+  text-decoration: underline;
+}
+
+/* ##### Sns-banner ##### */
+
+#sns-banner .container {
+  height: 140px;
+  background-image: url(../images/bottom-banner.jpg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 65px;
+}
+
+#sns-banner h1 {
+  color: var(--white);
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+#sns-banner p {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+#sns-banner img:first-child {
+  margin-right: 30px;
+}
+
+/* ##### Footer ##### */
+
+#main-footer {
+  border-top: 0.5px solid rgba(0, 0, 0, 0.2);
+  margin-top: 90px;
+}
+
+#main-footer .container {
+  padding: 50px 20px;
+}
+
+#main-footer .footer-menu {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+#main-footer .footer-menu a {
+  color: #444;
+}
+#main-footer .footer-menu span {
+  margin: 0 10px;
+}
+
+#main-footer address {
+  font-size: 12px;
+  font-style: normal;
+  color: #999;
+  margin-bottom: 15px;
+}
+#main-footer .copy {
+  font-size: 12px;
+  font-style: normal;
+  color: #999;
 }
