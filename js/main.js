@@ -1,5 +1,6 @@
 /* main.js */
 $(function () {
+  /* 메인배너 이미지 전환 */
   let bgArr = [
     "images/main-banner-1.jpg",
     "images/main-banner-2.jpg",
@@ -20,4 +21,13 @@ $(function () {
       "background-image": `url(${bgArr[bg_img_num]})`,
     });
   }, 5000);
+
+  /* 사이트맵 토글 */
+  $("#main-header .btn-toggle").click(function () {
+    $("#site-map-menu").css("height", "80vh");
+  });
+
+  $("#site-map-menu .btn-close").click(function () {
+    $("#site-map-menu").css("height", "0px");
+  });
 });
