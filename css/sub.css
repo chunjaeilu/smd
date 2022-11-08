@@ -1,0 +1,28 @@
+/* sub-page 공통 css */
+
+/* ##### Sub-title ##### */
+#sub-title {
+  height: 300px;
+  background: #ccc;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+#sub-title h1 {
+  font-size: 40px;
+  font-family: "noto sans kr", sans-serif;
+}
+
+/* ##### LNB ##### */
+#lnb {
+}
+
+/* body#about */
+
+#about #sub-title {
+  background-image: url(../images/sub-title-visual.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
