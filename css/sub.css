@@ -156,3 +156,53 @@ td {
   vertical-align: top;
   line-height: 2em;
 }
+
+/* :::::::: body#kr-tradition :::::::: */
+
+/* ##### Sub-title ##### */
+#kr-tradition #sub-title .container {
+  height: 100%;
+  background-image: url(../images/sub-title-visual_kr_tr.jpg);
+}
+
+/* ##### Introduction-kr-tr ##### */
+#kr-tradition .intro-kr-tr .container {
+  padding: 50px 20px;
+}
+
+/* ##### History-kr-tr ##### */
+#kr-tradition .history-kr-tr .container {
+  padding: 50px 20px;
+}
+
+#kr-tradition .history-kr-tr h2 {
+  margin-bottom: 35px;
+}
+
+#kr-tradition .history-kr-tr .history-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+#kr-tradition .history-kr-tr .history-list > li {
+  width: 50%;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.2);
+  padding: 30px 20px;
+  display: flex;
+}
+
+#kr-tradition .history-kr-tr .history-list > li > h3 {
+  margin-right: 40px;
+}
+
+#kr-tradition .history-kr-tr .annual-list {
+  color: var(--text-light);
+  line-height: 2em;
+}
+
+/* ##### Footer ##### */
+#kr-tradition footer {
+  margin-top: 40px;
+}

@@ -103,7 +103,6 @@ p {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  transition: 0.6s;
 }
 
 #gnb .depth2 > li {
@@ -125,6 +124,7 @@ p {
 #gnb .depth1 > li:hover .depth2 {
   max-height: 100%;
   opacity: 1;
+  transition: 0.5s;
 }
 
 #gnb .depth2 > li:hover > a {
