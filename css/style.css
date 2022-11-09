@@ -49,6 +49,10 @@ a {
 p {
   line-height: 26px;
 }
+.ft-cr-16 {
+  font-family: "Crimson", serif;
+  font-size: 16px;
+}
 
 .container {
   max-width: 1440px;
@@ -95,8 +99,11 @@ p {
   background: var(--white);
   border: 0.1px solid #ccc;
   margin-top: 27px;
-  display: none;
   padding: 10px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.6s;
 }
 
 #gnb .depth2 > li {
@@ -116,7 +123,8 @@ p {
 }
 
 #gnb .depth1 > li:hover .depth2 {
-  display: block;
+  max-height: 100%;
+  opacity: 1;
 }
 
 #gnb .depth2 > li:hover > a {
@@ -145,9 +153,6 @@ p {
   background-repeat: no-repeat;
   background-size: 500px;
   background-position: 110% 180%;
-  /* height: 0; */
-  /* overflow: hidden; */
-  /* transition: 0.2s; */
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 /* 사이트맵 비표시 상태 */
@@ -216,8 +221,6 @@ p {
   background: #fff;
   top: 0;
   z-index: 999;
-  height: 0;
-  overflow: hidden;
 }
 
 #site-map-menu .container {

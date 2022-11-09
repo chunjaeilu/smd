@@ -1,4 +1,4 @@
-/* sub-page 공통 css */
+/* :::::::: sub-page 공통 css :::::::: */
 
 /* ##### Sub-title ##### */
 #sub-title {
@@ -38,12 +38,12 @@
   font-weight: 700;
 }
 
-/* body#about */
+/* :::::::: body#about :::::::: */
 
 /* ##### Sub-title ##### */
 #about #sub-title .container {
   height: 100%;
-  background-image: url(../images/sub-title-visual.jpg);
+  background-image: url(../images/sub-title-visual_about.jpg);
 }
 
 /* ##### Section1 ##### */
@@ -80,4 +80,79 @@
 /* ##### Footer ##### */
 #about footer {
   margin-top: 40px;
+}
+
+/* :::::::: body#location :::::::: */
+
+/* ##### Sub-title ##### */
+#location #sub-title .container {
+  height: 100%;
+  background-image: url(../images/sub-title-visual_location.jpg);
+}
+
+/* ##### Map ##### */
+#location .map .container {
+  padding: 70px 0 50px;
+  position: relative;
+}
+
+#location .map .api {
+  width: 250px;
+  height: 250px;
+  background: #0b2a56;
+  color: #fff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
+  position: absolute;
+  top: 150px;
+  right: 100px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#location .map .api .direction-box {
+  display: flex;
+}
+
+#location .map .api .direction-box img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+#location .map .api .btn-api {
+  width: 130px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 60px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ##### Location-info ##### */
+#location .location-info .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#location .location-info .campus-map {
+  width: 50%;
+}
+#location .location-info .address {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#location .address table th,
+td {
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 2em;
 }
