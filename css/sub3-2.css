@@ -1,0 +1,32 @@
+#introduction #sub-title {
+  background-image: url("../images/한국무용.jpg");
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#introduction main .container .section1 > h1 {
+  padding-top: 72px;
+  padding-bottom: 12px;
+}
+
+#introduction main .container .section1 > p {
+  padding-bottom: 20px;
+}
+.section2 {
+  padding-left: 160px;
+}
+.section2 .section2-title {
+  padding-top: 20px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 125px;
+}
+.col {
+  width: 50%;
+}
+.col h3 {
+  padding-top: 20px;
+}
