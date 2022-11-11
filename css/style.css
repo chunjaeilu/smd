@@ -393,6 +393,9 @@ p {
 #sns-banner .container {
   height: 140px;
   background-image: url(../images/bottom-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
