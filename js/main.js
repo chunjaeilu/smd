@@ -35,9 +35,19 @@ $(function () {
   }); */
   $("#main-header .btn-toggle").on("click", function () {
     $("#site-map-menu").toggleClass("show");
+    $("#site-map-menu .depth2").removeClass("show");
   });
 
   $("#site-map-menu .btn-close").on("click", function () {
     $("#site-map-menu").removeClass("show");
+  });
+});
+
+/* 모바일 2단메뉴 */
+$(function () {
+  $("#site-map-menu .depth1 > li > a").click(function (event) {
+    $("#site-map-menu .depth2").removeClass("show");
+    $(this).next(".depth2").toggleClass("show");
+    event.preventDefault();
   });
 });

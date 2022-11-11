@@ -54,6 +54,10 @@ p {
   font-size: 16px;
 }
 
+.ft-bold {
+  font-weight: 700;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -143,7 +147,7 @@ p {
   position: fixed;
   width: 80%;
   min-width: 1000px;
-  height: 80vh;
+  height: 700px;
   background: rgba(255, 255, 255, 1);
   left: calc(50%);
   top: calc(50%);
@@ -205,6 +209,10 @@ p {
   font-size: 20px;
   font-weight: 700;
   line-height: 60px;
+}
+
+#site-map-menu .depth1 > li > a img {
+  display: none;
 }
 
 #site-map-menu .depth2 > li > a {
